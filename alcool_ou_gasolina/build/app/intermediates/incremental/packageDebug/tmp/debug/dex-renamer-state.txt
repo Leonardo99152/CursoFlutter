@@ -1,0 +1,4 @@
+#Tue May 30 05:36:50 BRT 2023
+base.0=C\:\\dev\\DesenvolvimentoAndroid\\alcool_ou_gasolina\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

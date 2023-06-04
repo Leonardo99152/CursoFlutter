@@ -1,0 +1,67 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d chrome --devtools-server-address http://127.0.0.1:9100/ --target lib\main.dart
+
+## exception
+
+StateError: Bad state: No running isolate (inspector is not set).
+
+```
+#0      ChromeProxyService.inspector (package:dwds/src/services/chrome_proxy_service.dart:79:7)
+#1      ChromeProxyService._prewarmExpressionCompilerCache (package:dwds/src/services/chrome_proxy_service.dart:222:34)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel master, 3.8.0-17.0.pre.8, on Microsoft Windows [versÆo 10.0.19045.2965], locale pt-BR)
+    • Flutter version 3.8.0-17.0.pre.8 on channel master at C:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision bdfe74fc4a (3 months ago), 2023-02-26 13:16:23 -0500
+    • Engine revision 0c040de0e6
+    • Dart version 3.0.0 (build 3.0.0-272.0.dev)
+    • DevTools version 2.22.1
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 33.0.2)
+    • Android SDK at C:\Users\Leonardo\AppData\Local\Android\sdk
+    • Platform android-33-ext5, build-tools 33.0.2
+    • Java binary at: C:\Program Files\Android\Android Studio1\jbr\bin\java
+    • Java version OpenJDK Runtime Environment (build 11.0.15+0-b2043.56-9505619)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop for Windows (Visual Studio Community 2022 17.5.0)
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.5.33414.496
+    • Windows 10 SDK version 10.0.22000.0
+
+[✓] Android Studio (version 2022.1)
+    • Android Studio at C:\Program Files\Android\Android Studio1
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.15+0-b2043.56-9505619)
+
+[✓] VS Code (version 1.78.2)
+    • VS Code at C:\Users\Leonardo\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.64.0
+
+[✓] Connected device (3 available)
+    • Web Server (web) • web-server • web-javascript • Flutter Tools
+    • Chrome (web)     • chrome     • web-javascript • Google Chrome 113.0.5672.127
+    • Edge (web)       • edge       • web-javascript • Microsoft Edge 113.0.1774.50
+
+[✓] Network resources
+    • All expected network resources are available.
+
+• No issues found!
+```
